@@ -5,19 +5,36 @@
 <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/newsvine.js"></script>
 </head>
 <body>
 
 <div data-role="page" id="feed">
-    <div data-role="header">
+    <div data-role="header" data-position="fixed">
         <h1>NewsVine</h1>
     </div>
 
     <div data-role="main" class="ui-content">
-        <p>I Am Now A Mobile Developer!!</p>
+        <div class="ui-body">
+            <video class="news-vid" width="" height="" controls>
+                <source src="uploads/test.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div data-role="collapsible">
+            <h3>details</h3>
+        </div>
+        <div data-role="ui-bar">
+            <h3>rating</h3>
+        </div>
+        <div data-role="ui-bar">
+            <h3>tags</h3>
+        </div>
+        <div data-role="collapsible">
+            <h3>comments</h3>
+        </div>
     </div>
 
-    <div data-role="footer">
+    <div data-role="footer" data-position="fixed">
         <div data-role="navbar">
             <ul>
                 <li><a href="#feed" data-icon="home" class="ui-btn-active ui-state-persist"></a></li>
@@ -30,7 +47,7 @@
 </div> <!-- feed -->
 
 <div data-role="page" id="search">
-    <div data-role="header">
+    <div data-role="header" data-position="fixed">
         <h1>NewsVine</h1>
     </div>
 
@@ -38,7 +55,7 @@
         <p>This is search page</p>
     </div>
 
-    <div data-role="footer">
+    <div data-role="footer" data-position="fixed">
         <div data-role="navbar">
             <ul>
                 <li><a href="#feed" data-icon="home"></a></li>
