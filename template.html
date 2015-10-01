@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.mobile-1.4.5.min.js"></script>
-<script src="js/newsvine.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    
+    <link rel="stylesheet" href="css/newsvine.css">
+    <script src="js/newsvine.js"></script>
 </head>
 <body>
 
@@ -15,17 +17,53 @@
     </div>
 
     <div data-role="main" class="ui-content">
-        <div class="ui-body">
-            <video class="news-vid" width="" height="" controls>
-                <source src="uploads/test.mp4" type="video/mp4">
-            </video>
+        
+        <div class="newsvine-vid">
+            <div class="ui-body">
+                <video class="news-vid" width="" height="" controls>
+                    <source src="uploads/test.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div data-role="collapsible" data-inset="false" data-collapsed="false">
+                <h3>details</h3>
+                <ul data-role="listview">
+                    <li>
+                        Rating
+                    </li>
+                    <li>
+                        Tags
+                    </li>
+                </ul>
+            </div>
+            <div data-role="collapsible" data-inset="false">
+                <h3>comments</h3>
+            </div>
         </div>
-        <div data-role="collapsible">
-            <h3>details</h3>
+        
+        <div class="newsvine-vid">
+            <div class="ui-body">
+                <video class="news-vid" width="" height="" controls>
+                    <source src="uploads/test.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div data-role="collapsible" data-inset="false" data-collapsed="false">
+                <h3>details</h3>
+                <ul data-role="listview">
+                    <li>
+                        Rating
+                    </li>
+                    <li>
+                        Tags
+                    </li>
+                </ul>
+            </div>
+            <div data-role="collapsible" data-inset="false">
+                <h3>comments</h3>
+            </div>
         </div>
-        <div data-role="collapsible">
-            <h3>comments</h3>
-        </div>
+        
     </div>
 
     <div data-role="footer" data-position="fixed">
