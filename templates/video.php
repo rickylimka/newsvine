@@ -10,6 +10,10 @@ $tags
 $location
 
 */
+
+
+$location = explode(" ", $location);
+
 ?>
 
 <div class="newsvine-vid">
@@ -41,29 +45,7 @@ $location
                     <a href="#" data-rel="back" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                     
                     
-                    <script>
-                        function initialize() {
-                            alert('nanannanana <?php echo $id; ?>');
-                            
-                            /* var latLng = <?php echo $location; ?>;
-                            latLng = latLng.split(" ");
-                            
-                            var myLatlng = new google.maps.LatLng( latLng[0], latLng[1] );
-                            var myOptions = {
-                                zoom: 15,
-                                center: myLatlng,
-                                mapTypeId: google.maps.MapTypeId.ROADMAP
-                            }
-                            var map = new google.maps.Map( document.getElementById( "map_canvas" ), myOptions );
-
-                            // Create a marker and set its position.
-                            var marker = new google.maps.Marker({
-                                map: map,
-                                position: myLatlng,
-                                title: 'Hello World!'
-                            }); */
-                        }
-                    </script>
+                    
                     <iframe src="map.html" width="480" height="320" seamless=""></iframe>
                 </div>
             </li>
