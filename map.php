@@ -11,7 +11,7 @@
 				center: myLatlng,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			}
-			var map = new google.maps.Map( document.getElementById( "map_canvas" ), myOptions );
+			var map = new google.maps.Map( document.getElementById( "<?php echo $_GET['id']'_map_canvas'?>" ), myOptions );
             
             // Create a marker and set its position.
             var marker = new google.maps.Marker({
@@ -39,7 +39,7 @@
 </head>
 <body onload="initialize()">
 
-	<div id="map_canvas"></div>
+	<div id="<?php echo $_GET['id']'_map_canvas'?>"></div>
 
 </body>
 </html>
