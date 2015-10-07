@@ -21,7 +21,7 @@
     <div data-role="main" class="ui-content">
         <?php
         
-        $videos = json_decode(file_get_contents('videos.json'), true);
+        $videos = json_decode(file_get_contents('db/videos.json'), true);
 
         foreach ($videos as $vid) {
             #parameters
