@@ -51,8 +51,9 @@ $location
             <li>comment 1</li>
             <li>comment 2</li>
             <li>comment 3</li>
-            <li><form><label for="textarea-1">Textarea:</label>
+            <li><form>
                 <textarea name="textarea-1" id="textarea-1"></textarea>
+                <input type="submit" value="Post">
             </form></li>
         </ul>
     </div>
