@@ -51,10 +51,9 @@ $location
             <li>comment 1</li>
             <li>comment 2</li>
             <li>comment 3</li>
-            <form>
-                <label for="textarea-1">Textarea:</label>
+            <li><form><label for="textarea-1">Textarea:</label>
                 <textarea name="textarea-1" id="textarea-1"></textarea>
-            </form>
+            </form></li>
         </ul>
     </div>
 </div>
