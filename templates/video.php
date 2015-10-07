@@ -43,7 +43,9 @@ $location
                     
                     <script>
                         function initialize() {
-                            var latLng = <?php echo "'".$location."'"; ?>;
+                            alert('nanannanana');
+                            
+                            /* var latLng = <?php echo "'".$location."'"; ?>;
                             latLng = latLng.split(" ");
                             
                             var myLatlng = new google.maps.LatLng( latLng[0], latLng[1] );
@@ -59,7 +61,7 @@ $location
                                 map: map,
                                 position: myLatlng,
                                 title: 'Hello World!'
-                            });
+                            }); */
                         }
                     </script>
                     <iframe src="map.html" width="480" height="320" seamless=""></iframe>
