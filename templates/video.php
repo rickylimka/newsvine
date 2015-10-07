@@ -46,7 +46,7 @@ $location = explode(" ", $location);
                     
                     
                     
-                    <iframe src="<?php echo 'map.php?id='.$id.'&long='.$location[0].'&lat='.$location[1]; ?>" width="480" height="320" seamless=""></iframe>
+                    <iframe src="<?php echo 'map.php?id="'.$id.'"&long='.$location[0].'&lat='.$location[1]; ?>" width="480" height="320" seamless=""></iframe>
                 </div>
             </li>
         </ul>
