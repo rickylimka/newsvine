@@ -19,67 +19,32 @@
     </div>
 
     <div data-role="main" class="ui-content">
+        <?php
         
-        <div class="newsvine-vid">
-            <div class="ui-bar">
-                <h3>cat</h3>
-            </div>
-            <div class="ui-body">
-                <video class="news-vid" width="" height="" controls>
-                    <source src="uploads/test.mp4" type="video/mp4">
-                </video>
-            </div>
+        $videos = json_decode(file_get_contents('videos.json'), true);
 
-            <div data-role="collapsible" data-inset="false" data-collapsed="false">
-                <h3>details</h3>
-                <ul data-role="listview">
-                    <li>
-                        Uploaded by: 
-                    </li>
-                    <li>
-                        Rating: 
-                    </li>
-                    <li>
-                        Tags: 
-                    </li>
-                    <li>
-                        <a href="#popupMap" data-transition="turn" data-rel="popup" class="ui-btn ui-icon-location ui-btn-icon-notext ui-corner-all ui-btn-inline">location</a>
-                        <div data-role="popup" id="popupMap" data-overlay-theme="a" data-theme="a" data-corners="false" data-tolerance="15,15">
-                            <a href="#" data-rel="back" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-                            <iframe src="map.html" width="480" height="320" seamless=""></iframe>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div data-role="collapsible" data-inset="false">
-                <h3>comments</h3>
-            </div>
-        </div>
-        
-        <div class="newsvine-vid">
-            <div class="ui-body">
-                <video class="news-vid" width="" height="" controls>
-                    <source src="uploads/test.mp4" type="video/mp4">
-                </video>
-            </div>
+        foreach ($videos as $vid) {
+            #parameters
+            $title = $vid["title"];
+            $id = $vid["id"];
+            $uploader = $vid["uploader"];
+            $rating = $vid["rating"];
+            $tags = $vid["tags"];
+            $location = $vid["location"];
+            
+            include('templates/video.php');
+        }
 
-            <div data-role="collapsible" data-inset="false" data-collapsed="false">
-                <h3>details</h3>
-                <ul data-role="listview">
-                    <li>
-                        Rating
-                    </li>
-                    <li>
-                        Tags
-                    </li>
-                </ul>
-            </div>
-            <div data-role="collapsible" data-inset="false">
-                <h3>comments</h3>
-            </div>
-        </div>
+        ?>
         
-    </div>
+        
+        
+        
+        
+        
+        
+        
+    </div> <!-- .ui-content -->
 
     <div data-role="footer" data-position="fixed">
         <div data-role="navbar">
