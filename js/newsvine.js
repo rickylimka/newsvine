@@ -1,7 +1,7 @@
 function initMaps() {
     $('.nwsv_map_latlng').each(function( index ) {
-        $loc = $(this).text();
-        alert($loc);
+        $loc = $(this).text().split(" ");
+        alert($loc[0]);
     });
 }
 
