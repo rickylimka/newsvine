@@ -1,3 +1,7 @@
 .newsvine-vid {
     margin-bottom: 5em;
 }
+
+iframe {
+    border: none;
+}
