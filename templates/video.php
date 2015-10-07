@@ -43,9 +43,9 @@ $location
                     
                     <script>
                         function initialize() {
-                            alert('nanannanana');
+                            alert('nanannanana <?php echo $id; ?>');
                             
-                            /* var latLng = <?php echo "'".$location."'"; ?>;
+                            /* var latLng = <?php echo $location; ?>;
                             latLng = latLng.split(" ");
                             
                             var myLatlng = new google.maps.LatLng( latLng[0], latLng[1] );
