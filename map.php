@@ -5,7 +5,7 @@
 	<title>Map</title>
 	<script>
 		function initialize() {
-			var myLatlng = new google.maps.LatLng( <?php echo $location[0] ?>, <?php echo $location[1] ?> );
+			var myLatlng = new google.maps.LatLng( <?php echo $_GET['long'] ?>, <?php echo $_GET['lat'] ?> );
 			var myOptions = {
 				zoom: 15,
 				center: myLatlng,
