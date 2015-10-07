@@ -18,7 +18,7 @@ $location = explode(" ", $location);
 
 <div class="newsvine-vid">
     <div class="ui-bar">
-        <h3><?php echo $title; ?></h3>
+        <h3><?php echo $title.$location[0].$location[1]; ?></h3>
     </div>
     
     <div class="ui-body">
