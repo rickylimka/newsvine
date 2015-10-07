@@ -36,9 +36,32 @@ $location
                 Tags: <?php echo $tags; ?>
             </li>
             <li>
-                <a href="#popupMap" data-transition="turn" data-rel="popup" class="ui-btn ui-icon-location ui-btn-icon-notext ui-corner-all ui-btn-inline nwsv_map_latlng"><?php echo $location; ?></a>
+                <a href="#popupMap" data-transition="turn" data-rel="popup" class="ui-btn ui-icon-location ui-btn-icon-notext ui-corner-all ui-btn-inline nwsv_map_latlng">location</a>
                 <div data-role="popup" id="popupMap" data-overlay-theme="a" data-theme="a" data-corners="false" data-tolerance="15,15">
                     <a href="#" data-rel="back" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    
+                    
+                    <script>
+                        function initialize() {
+                            var latLng = <?php echo $location; ?>;
+                            latLng = latLng.split(" ");
+                            
+                            var myLatlng = new google.maps.LatLng( latLng[0], latLng[1] );
+                            var myOptions = {
+                                zoom: 15,
+                                center: myLatlng,
+                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                            }
+                            var map = new google.maps.Map( document.getElementById( "map_canvas" ), myOptions );
+
+                            // Create a marker and set its position.
+                            var marker = new google.maps.Marker({
+                                map: map,
+                                position: myLatlng,
+                                title: 'Hello World!'
+                            });
+                        }
+                    </script>
                     <iframe src="map.html" width="480" height="320" seamless=""></iframe>
                 </div>
             </li>
