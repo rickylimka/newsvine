@@ -149,6 +149,19 @@
                     . "    map: map,"
                     . "    title: '" . $vid['title'] . "'"
                     . "});";
+                    
+                    
+                    echo "var " . $vid['id'] . "_marker_info = '<h1>" . $vid['title'] . "</h1>'"
+                    . "'<a href=#>Video Link</a>'";
+                    
+                    
+                    echo "var " . $vid['id'] . "_info_window = new google.maps.InfoWindow({"
+                    . "content: " . $vid['id'] . "_marker_info"
+                    . "});";
+                    
+                    echo $vid['id'] . "_marker_info.addListener('click', function() {"
+                    . "infowindow.open(map, marker_" . $vid['id'] . ")"
+                    . "});";
                 }
                 
                 
