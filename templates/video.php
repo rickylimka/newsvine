@@ -57,9 +57,9 @@ $location = explode(" ", $location);
     <div data-role="collapsible" data-inset="false">
         <h3>comments</h3>
         <ul class="nwsv-comments" data-role="listview" data-inset="false">
-            <li><span class="bold">user1</span>comment 1</li>
-            <li><span class="bold">user2</span>comment 2</li>
-            <li><span class="bold">user3</span>comment 3</li>
+            <li><span class="bold">user1 </span>comment 1</li>
+            <li><span class="bold">user2 </span>comment 2</li>
+            <li><span class="bold">user3 </span>comment 3</li>
         </ul>
         <form class="nwsv-comment-box">
             <textarea name="textarea-1" id="textarea-1" placeholder="Comment..."></textarea>

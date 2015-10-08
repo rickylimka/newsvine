@@ -24,7 +24,6 @@
 		}
 	</script>
     
-	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<style>
 		html {
 			height: 100%;
@@ -45,4 +44,7 @@
 	<div id="map_canvas"></div>
 
 </body>
+    
+    
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 </html>
