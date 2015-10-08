@@ -5,14 +5,11 @@ $(document).ready(function() {
     
     $('.nwsv-comment-box input').click(function() {
         var comment_box = $(this).closest('form');
-        
         var comments = comment-box.prev();
         
         var html = "<li class='ui-li-static ui-body-inherit ui-last-child'>" + "hahhaha" + "</li>";
         comments.append(html);
         comments.find(".ui-last-child").first().removeClass("ui-last-child");
-        
-        comment_box.text("");
     });
     
 });
