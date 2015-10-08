@@ -129,6 +129,33 @@
                 };
                 var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
                 // Add an overlay to the map of current lat/lng
+                
+                
+                
+                <?php
+                foreach ($videos as $vid) {
+                    #parameters
+                    $title = $vid["title"];
+                    $id = $vid["id"];
+                    $uploader = $vid["uploader"];
+                    $rating = $vid["rating"];
+                    $tags = $vid["tags"];
+                    $location = $vid["location"];
+                    $location = explode(" ", $location);
+
+                    echo "var " . $vid['id'] . "_lnglat = new google.maps.LatLng(" . $location[0] . "," . $location[1] . ");
+                    var marker_" . $vid['id'] . " = new google.maps.Marker({
+                        position: " . $vid['id'] . "_lnglat,
+                        map: map,
+                        title: " . $vid['title'] . "
+                    });";
+                
+                
+                
+                ?>
+                
+                
+                
                 var marker = new google.maps.Marker({
                     position: latlng,
                     map: map,
