@@ -21,7 +21,5 @@ function initMaps() {
 }
 
 $(document).ready(function() {
-    $('.news-vid').width($('.news-vid').parent().width());
-    
-    alert($('iframe').attr('src'));
+    $('.news-vid').width($('.news-vid').parent().width());    
 });
