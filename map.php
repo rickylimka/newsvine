@@ -4,14 +4,14 @@
 	<meta charset="utf-8">
 	<title>Map</title>
 	<script>
-		function <?php echo $_GET['id'];?>initialize() {
+		function initialize() {
 			var myLatlng = new google.maps.LatLng( <?php echo $_GET['long']; ?>, <?php echo $_GET['lat']; ?> );
 			var myOptions = {
-				zoom: 15,
+				zoom: 14,
 				center: myLatlng,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			}
-			var map = new google.maps.Map( document.getElementById( "<?php echo $_GET['id'].'_map_canvas'; ?>" ), myOptions );
+			var map = new google.maps.Map( document.getElementById( "map_canvas" ), myOptions );
             
             // Create a marker and set its position.
             var marker = new google.maps.Marker({
@@ -19,6 +19,8 @@
                 position: myLatlng,
                 title: 'Hello World!'
             });
+            
+            map.setCenter(myLatlng);
 		}
 	</script>
 	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
@@ -32,14 +34,14 @@
 			padding: 0;
 			height: 100%;
 		}
-		#<?php echo $_GET['id'];?>_map_canvas {
+		#map_canvas {
 			height: 100%;
 		}
 	</style>
 </head>
-<body onload="<?php echo $_GET['id'];?>initialize()">
+<body onload="initialize()">
 
-	<div id="<?php echo $_GET['id'].'_map_canvas'; ?>"></div>
+	<div id="map_canvas"></div>
 
 </body>
 </html>
