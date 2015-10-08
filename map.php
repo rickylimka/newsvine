@@ -32,7 +32,7 @@
 			padding: 0;
 			height: 100%;
 		}
-		#map_canvas {
+		#<?php echo $_GET['id'];?>_map_canvas {
 			height: 100%;
 		}
 	</style>
