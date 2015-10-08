@@ -144,7 +144,7 @@
                     $location = explode(" ", $location);
 
                     echo "var " . $vid['id'] . "_latlng = new google.maps.LatLng(" . $location[0] . "," . $location[1] . ");"
-                    . "var marker_" . $vid['id'] . " = new google.maps.Marker({"
+                    . "var " . $vid['id'] . "_marker = new google.maps.Marker({"
                     . "    position: " . $vid['id'] . "_latlng,"
                     . "    map: map,"
                     . "    title: '" . $vid['title'] . "'"
@@ -159,7 +159,7 @@
                     . "content: " . $vid['id'] . "_marker_info"
                     . "});";
                     
-                    echo $vid['id'] . "_marker_info.addListener('click', function() {"
+                    echo $vid['id'] . "_marker.addListener('click', function() {"
                     . "infowindow.open(map, marker_" . $vid['id'] . ")"
                     . "});";
                 }
