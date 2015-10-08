@@ -62,7 +62,7 @@ $location = explode(" ", $location);
             <li>comment 3</li>
             <li><form>
                 <textarea name="textarea-1" id="textarea-1"></textarea>
-                <input value="Post">
+                <input type="button" value="Post">
             </form></li>
         </ul>
     </div>
