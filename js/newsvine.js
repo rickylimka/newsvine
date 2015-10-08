@@ -5,7 +5,7 @@ $(document).ready(function() {
     
     $('.nwsv-comment-box input').click(function() {
         var commentText = $(this).closest('form').find('textarea');
-        alert(commentText.text());
+        alert(commentText.val());
         
         var comments = $(this).closest('form').prev();
         comments.append("<li class='ui-li-static ui-body-inherit ui-last-child'>nanannananna</li>");
