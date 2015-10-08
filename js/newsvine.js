@@ -1,5 +1,5 @@
 function initMaps() {
-    alert($(".nwsv_map_canvas").attr('id'));
+    alert($(".nwsv_map_canvas").text());
     
     
     
@@ -22,4 +22,6 @@ function initMaps() {
 
 $(document).ready(function() {
     $('.news-vid').width($('.news-vid').parent().width());
+    
+    initMaps();
 });
