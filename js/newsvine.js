@@ -4,7 +4,7 @@ $(document).ready(function() {
     
     
     $('.nwsv-comment-box input').click(function() {
-        var comment-box = $(this).closest('form');
+        var comment_box = $(this).closest('form');
         
         var comments = comment-box.prev();
         
@@ -12,7 +12,7 @@ $(document).ready(function() {
         comments.append(html);
         comments.find(".ui-last-child").first().removeClass("ui-last-child");
         
-        comment-box.text("");
+        comment_box.text("");
     });
     
 });
