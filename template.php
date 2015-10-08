@@ -6,6 +6,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
 
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script src="js/popup-iframe-map.js" id="map-script"></script>
     
     <link rel="stylesheet" href="css/newsvine.css">

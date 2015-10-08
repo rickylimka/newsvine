@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Map</title>
+    
     <script src="js/jquery.min.js"></script>
 	<script>
 		function initialize() {
@@ -29,7 +30,9 @@
         $(document).ready(function() {
             initialize();
             
-            map.setCenter(myLatlng);
+            $( document ).bind( "pageshow", function( event, data ){
+            google.maps.event.trigger(map, 'resize');
+            });
         });
 	</script>
     
