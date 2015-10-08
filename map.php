@@ -37,9 +37,9 @@
 		}
 	</style>
 </head>
-<body>
+<body onload="initialize()">
 
-	<div onload="initialize()" id="<?php echo $_GET['id'].'_map_canvas'; ?>"></div>
+	<div id="<?php echo $_GET['id'].'_map_canvas'; ?>"></div>
 
 </body>
 </html>
