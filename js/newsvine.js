@@ -23,5 +23,5 @@ function initMaps() {
 $(document).ready(function() {
     $('.news-vid').width($('.news-vid').parent().width());
     
-    alert($('iframe').contents());
+    alert($('iframe').attr('src'));
 });
