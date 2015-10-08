@@ -28,10 +28,6 @@
         
         
         $(document).ready(function() {
-            initialize();
-        });
-        
-        $( document ).bind( "pageshow", function( event, data ){
             google.maps.event.trigger(map, 'resize');
         });
 	</script>
@@ -51,7 +47,7 @@
 		}
 	</style>
 </head>
-<body>
+<body onload="initialize()">
 
 	<div id="map_canvas"></div>
 
