@@ -1,5 +1,5 @@
 function initMaps() {
-    alert($(".nwsv_map_canvas").text());
+    alert($(".nwsv_map_canvas").html());
     
     
     
@@ -23,5 +23,7 @@ function initMaps() {
 $(document).ready(function() {
     $('.news-vid').width($('.news-vid').parent().width());
     
-    initMaps();
+    $("iframe").ready(function() {
+        initMaps();
+    });
 });
