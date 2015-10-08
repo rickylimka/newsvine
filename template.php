@@ -147,7 +147,7 @@
                     . "var marker_" . $vid['id'] . " = new google.maps.Marker({"
                     . "    position: " . $vid['id'] . "_lnglat,"
                     . "    map: map,"
-                    . "    title: " . $vid['title']
+                    . "    title: '" . $vid['title'] . "'"
                     . "});";
                 }
                 
