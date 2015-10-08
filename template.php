@@ -143,12 +143,12 @@
                     $location = $vid["location"];
                     $location = explode(" ", $location);
 
-                    echo "var " . $vid['id'] . "_lnglat = new google.maps.LatLng(" . $location[0] . "," . $location[1] . ");
-                    var marker_" . $vid['id'] . " = new google.maps.Marker({
-                        position: " . $vid['id'] . "_lnglat,
-                        map: map,
-                        title: " . $vid['title'] . "
-                    });";
+                    echo "var " . $vid['id'] . "_lnglat = new google.maps.LatLng(" . $location[0] . "," . $location[1] . ");"
+                    . "var marker_" . $vid['id'] . " = new google.maps.Marker({"
+                    . "    position: " . $vid['id'] . "_lnglat,"
+                    . "    map: map,"
+                    . "    title: " . $vid['title']
+                    . "});";
                 
                 
                 
