@@ -149,7 +149,7 @@
                     . "    map: map,"
                     . "    title: " . $vid['title']
                     . "});";
-                
+                }
                 
                 
                 ?>
