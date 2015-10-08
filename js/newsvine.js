@@ -1,5 +1,5 @@
 function initMaps() {
-    alert($(".nwsv_map_canvas").html());
+    $(".nwsv_map_canvas").html("nanannananan");
     
     
     
