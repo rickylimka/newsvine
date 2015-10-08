@@ -5,10 +5,11 @@
     <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    
     <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="js/popup-iframe-map.js" id="map-script"></script>
     
     <link rel="stylesheet" href="css/newsvine.css">
-    <script src="js/popup-iframe-map.js" id="map-script"></script>
     <script src="js/newsvine.js"></script>
 </head>
     
@@ -66,6 +67,7 @@
 
     <div data-role="main" class="ui-content">
         <input id="filterBasic-input" data-type="search">
+        
     </div>
 
     <div data-role="footer" data-position="fixed">
@@ -87,6 +89,7 @@
 
     <div data-role="main" class="ui-content">
         <input type="file" name="file" id="file" value="">
+        <input type="submit" value="Upload">
     </div>
 
     <div data-role="footer" data-position="fixed">
@@ -102,12 +105,53 @@
 </div> <!-- feed -->
 
 <div data-role="page" id="notifications">
+    <script>
+        $( document ).on( "pageinit", "#map-page", function() {
+            var defaultLatLng = new google.maps.LatLng(34.0983425, -118.3267434);  // Default to Hollywood, CA when no geolocation support
+            if ( navigator.geolocation ) {
+                function success(pos) {
+                    // Location found, show map with these coordinates
+                    drawMap(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+                }
+                function fail(error) {
+                    drawMap(defaultLatLng);  // Failed to find location, show default map
+                }
+                // Find the users current position.  Cache the location for 5 minutes, timeout after 6 seconds
+                navigator.geolocation.getCurrentPosition(success, fail, {maximumAge: 500000, enableHighAccuracy:true, timeout: 6000});
+            } else {
+                drawMap(defaultLatLng);  // No geolocation support, show default map
+            }
+            function drawMap(latlng) {
+                var myOptions = {
+                    zoom: 10,
+                    center: latlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+                // Add an overlay to the map of current lat/lng
+                var marker = new google.maps.Marker({
+                    position: latlng,
+                    map: map,
+                    title: "Greetings!"
+                });
+            }
+        });
+    </script>
+    
+    
     <div data-role="header" data-position="fixed">
         <h1>NewsVine</h1>
     </div>
 
     <div data-role="main" class="ui-content">
-        <p>notifications page</p>
+        <div data-role="page" id="map-page" data-url="map-page">
+            <div data-role="header" data-theme="a">
+            <h1>Maps</h1>
+            </div>
+            <div role="main" class="ui-content" id="map-canvas">
+                <!-- map loads here... -->
+            </div>
+        </div>
     </div>
 
     <div data-role="footer" data-position="fixed">
