@@ -1,5 +1,5 @@
 function initMaps() {
-    $(".nwsv_map_canvas").html("nanannananan");
+    alert($('iframe').contents().find('.nwsv_map_canvas').attr('id'));
     
     
     
