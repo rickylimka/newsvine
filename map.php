@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Map</title>
-	<script>
+	<!--<script>
 		function initialize() {
 			var myLatlng = new google.maps.LatLng( <?php echo $_GET['long'] ?>, <?php echo $_GET['lat'] ?> );
 			var myOptions = {
@@ -20,7 +20,7 @@
                 title: 'Hello World!'
             });
 		}
-	</script>
+	</script>-->
 	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<style>
 		html {
@@ -39,7 +39,7 @@
 </head>
 <body onload="initialize()">
 
-	<div id="<?php echo $_GET['id'].'_map_canvas'?>"></div>
+	<div class="nwsv_map_canvas" id="<?php echo $_GET['id'].'_map_canvas'?>"><?php echo $_GET['long'] ?> <?php echo $_GET['lat']</div>
 
 </body>
 </html>
