@@ -4,11 +4,11 @@ $(document).ready(function() {
     
     
     $('.nwsv-comment-box input').click(function() {
-        var comment_box = $(this).closest('form');
-        var comments = comment-box.prev();
+        var commentText = $(this).closest('form').find('textfield');
+        alert(commentText.text());
         
-        var html = "<li class='ui-li-static ui-body-inherit ui-last-child'>" + "hahhaha" + "</li>";
-        comments.append(html);
+        var comments = $(this).closest('form').prev();
+        comments.append("<li class='ui-li-static ui-body-inherit ui-last-child'>nanannananna</li>");
         comments.find(".ui-last-child").first().removeClass("ui-last-child");
     });
     
