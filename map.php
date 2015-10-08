@@ -21,13 +21,15 @@
                 title: 'Hello World!'
             });
             
-            map.setCenter(myLatlng);
+            
 		}
         
         
         
         $(document).ready(function() {
             initialize();
+            
+            map.setCenter(myLatlng);
         });
 	</script>
     
