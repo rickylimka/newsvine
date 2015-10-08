@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<title>Map</title>
-    <script src="js/jquery.min.js"></script>
 	<script>
 		function initialize() {
 			var myLatlng = new google.maps.LatLng( <?php echo $_GET['long']; ?>, <?php echo $_GET['lat']; ?> );
@@ -23,13 +22,8 @@
             
             map.setCenter(myLatlng);
 		}
-        
-        
-        
-        $(document).ready(function() {
-            initialize();
-        });
 	</script>
+    
 	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<style>
 		html {
@@ -46,7 +40,7 @@
 		}
 	</style>
 </head>
-<body>
+<body onload="initialize()">
 
 	<div id="map_canvas"></div>
 
