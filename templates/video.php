@@ -39,7 +39,7 @@ $location = explode(" ", $location);
             <li>
                 Tags: <?php echo $tags; ?>
             </li>
-            <li>
+            <li data-icon="false">
                 <a href="#<?php echo $id;?>_popup_map" data-transition="slideup" data-rel="popup" class="nwsv_map_latlng">
                     <input type="button" data-icon="location" data-iconpos="top" value="Location">
                 </a>
