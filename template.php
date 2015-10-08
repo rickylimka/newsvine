@@ -103,8 +103,8 @@
         </div> <!-- footer -->
     </div> <!-- navbar -->
 </div> <!-- feed -->
-
-<div data-role="page" id="notifications">
+    
+<div data-role="page" id="map-page" data-url="map-page">
     <script>
         $( document ).on( "pageinit", "#map-page", function() {
             var defaultLatLng = new google.maps.LatLng(34.0983425, -118.3267434);  // Default to Hollywood, CA when no geolocation support
@@ -138,20 +138,11 @@
         });
     </script>
     
-    
     <div data-role="header" data-position="fixed">
         <h1>NewsVine</h1>
     </div>
-
-    <div data-role="main" class="ui-content">
-        <div data-role="page" id="map-page" data-url="map-page">
-            <div data-role="header" data-theme="a">
-            <h1>Maps</h1>
-            </div>
-            <div role="main" class="ui-content" id="map-canvas">
-                <!-- map loads here... -->
-            </div>
-        </div>
+    <div role="main" class="ui-content" id="map-canvas">
+        <!-- map loads here... -->
     </div>
 
     <div data-role="footer" data-position="fixed">
