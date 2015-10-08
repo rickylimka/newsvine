@@ -60,10 +60,10 @@ $location = explode(" ", $location);
             <li>comment 1</li>
             <li>comment 2</li>
             <li>comment 3</li>
-            <li><form>
-                <textarea name="textarea-1" id="textarea-1"></textarea>
-                <input type="button" value="Post">
-            </form></li>
         </ul>
+        <form class="nwsv-comment-box">
+            <textarea name="textarea-1" id="textarea-1" placeholder="Comment..."></textarea>
+            <input type="button" value="Post">
+        </form><
     </div>
 </div>

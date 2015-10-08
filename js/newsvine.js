@@ -3,8 +3,9 @@ $(document).ready(function() {
     
     
     
-    $('.nwsv-comments input').click(function() {
-        alert('nannanana');
+    $('.nwsv-comment-box input').click(function() {
+        
+        alert($(this).parent().prev().attr('class'));
     });
     
 });
