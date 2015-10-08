@@ -151,8 +151,8 @@
                     . "});";
                     
                     
-                    echo "var " . $vid['id'] . "_marker_info = '<h1>" . $vid['title'] . "</h1>'"
-                    . "'<a href=#>Video Link</a>'";
+                    echo "var " . $vid['id'] . "_marker_info = '<h1>" . $vid['title'] . "</h1>"
+                    . "<a href=#>Video Link</a>';";
                     
                     
                     echo "var " . $vid['id'] . "_info_window = new google.maps.InfoWindow({"
