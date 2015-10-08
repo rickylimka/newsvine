@@ -29,10 +29,10 @@
         
         $(document).ready(function() {
             initialize();
-            
-            $( document ).bind( "pageshow", function( event, data ){
+        });
+        
+        $( document ).bind( "pageshow", function( event, data ){
             google.maps.event.trigger(map, 'resize');
-            });
         });
 	</script>
     
