@@ -160,7 +160,7 @@
                     . "});";
                     
                     echo $vid['id'] . "_marker.addListener('click', function() {"
-                    . $vid['id'] . "_marker_info.open(map, " . $vid['id'] . "_marker)"
+                    . $vid['id'] . "_info_window.open(map, " . $vid['id'] . "_marker)"
                     . "});";
                 }
                 
