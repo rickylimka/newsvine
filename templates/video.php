@@ -64,6 +64,6 @@ $location = explode(" ", $location);
         <form class="nwsv-comment-box">
             <textarea name="textarea-1" id="textarea-1" placeholder="Comment..."></textarea>
             <input type="button" value="Post">
-        </form><
+        </form>
     </div>
 </div>

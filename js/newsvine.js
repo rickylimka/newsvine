@@ -5,7 +5,7 @@ $(document).ready(function() {
     
     $('.nwsv-comment-box input').click(function() {
         
-        alert($(this).parent().prev().attr('class'));
+        alert($(this).closest('form').prev().attr('class'));
     });
     
 });
