@@ -7,9 +7,9 @@ $(document).ready(function() {
         var commentText = $(this).closest('form').find('textarea');
         
         var comments = $(this).closest('form').prev();
-        var commentText = "<li class='ui-li-static ui-body-inherit ui-last-child'>" + commentText.val() + "</li>"
+        var html = "<li class='ui-li-static ui-body-inherit ui-last-child'>" + commentText.val() + "</li>"
         
-        comments.append(commentText);
+        comments.append(html);
         comments.find(".ui-last-child").first().removeClass("ui-last-child");
         
         commentText.val("");
