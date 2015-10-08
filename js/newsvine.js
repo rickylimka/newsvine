@@ -23,7 +23,5 @@ function initMaps() {
 $(document).ready(function() {
     $('.news-vid').width($('.news-vid').parent().width());
     
-    $('iframe').ready(function() {
-        initMaps();
-    });
+    alert($('iframe').contents());
 });
