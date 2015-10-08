@@ -143,9 +143,9 @@
                     $location = $vid["location"];
                     $location = explode(" ", $location);
 
-                    echo "var " . $vid['id'] . "_lnglat = new google.maps.LatLng(" . $location[0] . "," . $location[1] . ");"
+                    echo "var " . $vid['id'] . "_latlng = new google.maps.LatLng(" . $location[0] . "," . $location[1] . ");"
                     . "var marker_" . $vid['id'] . " = new google.maps.Marker({"
-                    . "    position: " . $vid['id'] . "_lnglat,"
+                    . "    position: " . $vid['id'] . "_latlng,"
                     . "    map: map,"
                     . "    title: '" . $vid['title'] . "'"
                     . "});";
@@ -159,7 +159,8 @@
                 var marker = new google.maps.Marker({
                     position: latlng,
                     map: map,
-                    title: "Greetings!"
+                    title: "your pos!",
+                    icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
                 });
             }
         });
