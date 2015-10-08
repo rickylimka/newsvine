@@ -4,7 +4,7 @@ $(document).ready(function() {
     
     
     $('.nwsv-comment-box input').click(function() {
-        var commentText = $(this).closest('form').find('textfield');
+        var commentText = $(this).closest('form').find('textarea');
         alert(commentText.text());
         
         var comments = $(this).closest('form').prev();
