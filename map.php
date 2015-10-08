@@ -37,7 +37,7 @@
 		}
 	</style>
 </head>
-<body onload="initialize()">
+<body>
 
 	<div class="nwsv_map_canvas" id="<?php echo $_GET['id'].'_map_canvas'?>"><?php echo $_GET['long'] ?> <?php echo $_GET['lat']</div>
 

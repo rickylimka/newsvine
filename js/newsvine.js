@@ -1,5 +1,5 @@
 function initMaps() {
-    alert($(".nwsv_map_canvas").text());
+    alert($(".nwsv_map_canvas").attr('id'));
     
     
     
