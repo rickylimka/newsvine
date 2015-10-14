@@ -75,25 +75,25 @@
     <ui data-role="listview" data-filter="true" data-filter-reveal="true" data-input="#autocomplete-input" data-inset="true">
         <li><a href="#">
             <img src="">
-            <h2>Cat 1</h2>
+            <h2>#Cat1</h2>
             <p>Cat description1</p>
             </a></li>
         
         <li><a href="#">
             <img src="">
-            <h2>Cat 2</h2>
+            <h2>#Cat2</h2>
             <p>Cat description2</p>
             </a></li>
         
         <li><a href="#">
             <img src="">
-            <h2>Cat 3</h2>
+            <h2>#Cat3</h2>
             <p>Cat description3</p>
             </a></li>
         
         <li><a href="#">
             <img src="">
-            <h2>Cat 4</h2>
+            <h2>#Cat4</h2>
             <p>Cat description4</p>
             </a></li>
     
