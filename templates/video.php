@@ -37,7 +37,7 @@ $location = explode(" ", $location);
                 Rating: <?php echo $rating; ?>
             </li>
             <li>
-                Tags: <a href="../index.php#search"><?php echo $tags; ?></a>
+                Tags: <?php echo $tags; ?>
             </li>
             <li data-icon="false">
                 <a href="#<?php echo $id;?>_popup_map" data-transition="slideup" data-rel="popup" class="nwsv_map_latlng">
