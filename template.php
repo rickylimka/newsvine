@@ -96,6 +96,12 @@
             <h2>Cat 4</h2>
             <p>#Cat #staring</p>
             </a></li>
+        
+        <li><a href="#">
+            <img src="">
+            <h2>DECO3500 Exhibition</h2>
+            <p>#deco3500 #exhibition</p>
+            </a></li>
     </ui>
 
     <div data-role="footer" data-position="fixed">
