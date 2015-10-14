@@ -86,7 +86,7 @@
             </a></li>
         
         <li><a href="#">
-            <img src="images/cat3.jpg">
+            <img src="images/cat3.gif">
             <h2>#Cat3</h2>
             <p>Cat description3</p>
             </a></li>
