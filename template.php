@@ -76,25 +76,25 @@
         <li><a href="#">
             <img src="images/cat1.jpg">
             <h2>Cat 1</h2>
-            <p>#Cat #cutie</p>
+            <p>#animals #Cat #cutie</p>
             </a></li>
         
         <li><a href="#">
             <img src="images/cat2.jpg">
             <h2>Cat 2</h2>
-            <p>#Cat #white</p>
+            <p>#animals #Cat #white</p>
             </a></li>
         
         <li><a href="#">
             <img src="images/cat3.gif">
             <h2>Cat 3</h2>
-            <p>#Cat #livingCutie</p>
+            <p>#animals #Cat #livingCutie</p>
             </a></li>
         
         <li><a href="#">
             <img src="images/cat4.jpeg">
             <h2>Cat 4</h2>
-            <p>#Cat #staring</p>
+            <p>#animals #Cat #staring</p>
             </a></li>
         
         <li><a href="#">
