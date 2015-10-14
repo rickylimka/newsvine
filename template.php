@@ -96,11 +96,6 @@
             <h2>#Cat4</h2>
             <p>Cat description4</p>
             </a></li>
-        <li><a href="#">
-            <img src="">
-            <h2>#exhibition</h2>
-            <p>Exhibition description</p>
-            </a></li>
     </ui>
 
     <div data-role="footer" data-position="fixed">
