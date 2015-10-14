@@ -68,13 +68,36 @@
     <!--<div data-role="main" class="ui-content">
         <input id="filterBasic-input" data-type="search" data-filter-reveal="true">
     </div>-->
-    <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search results.." data-inset="true">
-    <li><a href="#">Cat1</a></li>
-    <li><a href="#">Cat2</a></li>
-    <li><a href="#">Cat3</a></li>
-    <li><a href="#">Cat4</a></li>
+    <form class="ui-filterable">
+        <input id="autocomplete-input" data-type="search" placeholder="Search results..">
+    </form>
     
-    </ul>
+    <ui data-role="listview" data-filter="true" data-filter-reveal="true" data-input="#autocomplete-input" data-inset="true">
+        <li><a href="#">
+            <img src="">
+            <h2>Cat 1</h2>
+            <p>Cat description1</p>
+            </a></li>
+        
+        <li><a href="#">
+            <img src="">
+            <h2>Cat 2</h2>
+            <p>Cat description2</p>
+            </a></li>
+        
+        <li><a href="#">
+            <img src="">
+            <h2>Cat 3</h2>
+            <p>Cat description3</p>
+            </a></li>
+        
+        <li><a href="#">
+            <img src="">
+            <h2>Cat 4</h2>
+            <p>Cat description4</p>
+            </a></li>
+    
+    </ui>
 
     <div data-role="footer" data-position="fixed">
         <div data-role="navbar">
