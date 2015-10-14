@@ -67,7 +67,7 @@
 
     <div data-role="main" class="ui-content">
         <input id="filterBasic-input" data-type="search">
-        <p>sads</p>
+        <p>asd</p>
     </div>
 
     <div data-role="footer" data-position="fixed">
