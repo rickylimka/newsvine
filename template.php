@@ -74,7 +74,7 @@
     
     <ui data-role="listview" data-filter="true" data-filter-reveal="true" data-input="#autocomplete-input" data-inset="true">
         <li><a href="#">
-            <img src="images/cat1.jpg" width="150px" height="150px">
+            <img src="images/cat1.jpg">
             <h2>#Cat1</h2>
             <p>Cat description1</p>
             </a></li>
@@ -96,7 +96,11 @@
             <h2>#Cat4</h2>
             <p>Cat description4</p>
             </a></li>
-    
+        <li><a href="#">
+            <img src="">
+            <h2>#exhibition</h2>
+            <p>Exhibition description</p>
+            </a></li>
     </ui>
 
     <div data-role="footer" data-position="fixed">
