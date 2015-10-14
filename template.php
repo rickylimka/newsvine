@@ -54,7 +54,7 @@
                 <li><a href="#feed" data-icon="home" class="ui-btn-active ui-state-persist"></a></li>
                 <li><a href="#search" data-icon="search"></a></li>
                 <li><a href="#upload" data-icon="plus"></a></li>
-                <li><a href="#map-page" data-icon="info"></a></li>
+                <li><a href="#map-page" data-icon="location"></a></li>
             </ul>
         </div> <!-- footer -->
     </div> <!-- navbar -->
@@ -104,7 +104,7 @@
                 <li><a href="#feed" data-icon="home"></a></li>
                 <li><a href="#search" data-icon="search" class="ui-btn-active ui-state-persist"></a></li>
                 <li><a href="#upload" data-icon="plus"></a></li>
-                <li><a href="#map-page" data-icon="info"></a></li>
+                <li><a href="#map-page" data-icon="location"></a></li>
             </ul>
         </div> <!-- footer -->
     </div> <!-- navbar -->
@@ -126,7 +126,7 @@
                 <li><a href="#feed" data-icon="home"></a></li>
                 <li><a href="#search" data-icon="search"></a></li>
                 <li><a href="#upload" data-icon="plus" class="ui-btn-active ui-state-persist"></a></li>
-                <li><a href="#map-page" data-icon="info"></a></li>
+                <li><a href="#map-page" data-icon="location"></a></li>
             </ul>
         </div> <!-- footer -->
     </div> <!-- navbar -->
@@ -230,7 +230,7 @@
                 <li><a href="#feed" data-icon="home"></a></li>
                 <li><a href="#search" data-icon="search"></a></li>
                 <li><a href="#upload" data-icon="plus"></a></li>
-                <li><a href="#map-page" data-icon="info" class="ui-btn-active ui-state-persist"></a></li>
+                <li><a href="#map-page" data-icon="location" class="ui-btn-active ui-state-persist"></a></li>
             </ul>
         </div> <!-- footer -->
     </div> <!-- navbar -->
